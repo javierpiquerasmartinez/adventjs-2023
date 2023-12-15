@@ -19,3 +19,7 @@ function findFirstRepeated(gifts) {
 
     return -1
 }
+
+function findFirstRepeated2(gifts) {
+    return gifts.find((id, i) => gifts.indexOf(id) !== i) ?? -1
+}
