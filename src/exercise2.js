@@ -16,7 +16,11 @@ function manufacture(gifts, materials) {
     return res
 }
 
-// A better option would be to use the isSubset() method of Set, still experimental
+function manufacture2(gifts, materials){
+    return gifts.filter(gift => {
+        return gift.split('').every(material => materials.includes(material))
+    })
+}
 
 const gifts = ['tren', 'oso', 'pelota']
 const materials = 'tronesa'
