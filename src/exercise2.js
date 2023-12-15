@@ -16,6 +16,8 @@ function manufacture(gifts, materials) {
     return res
 }
 
+// A better option would be to use the isSubset() method of Set, still experimental
+
 const gifts = ['tren', 'oso', 'pelota']
 const materials = 'tronesa'
 manufacture(gifts, materials)
