@@ -18,6 +18,22 @@ function findNaughtyStep(original, modified) {
     }) || ''
 }
 
+function findNaughtyStep2(original, modified) {
+    let bigger
+    let smaller
+    if(original.length > modified.length) {
+        bigger = original
+        smaller = modified
+    } else {
+        bigger = modified
+        smaller = original
+    }
+    return [...bigger].find((process, i) => {
+        return process !== smaller[i]
+    }) || ''
+}
+
+
 /* 
 const original = 'abcd'
 const modified = 'abcde'
