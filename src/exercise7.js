@@ -8,8 +8,8 @@ Las líneas de los regalos se dibujan con # y las caras con el símbolo que nos 
 */
 
 function drawGift(size, symbol) {
-    // Code here
-    return '#\n'
+	// Code here
+	return '#\n'
 }
 
 drawGift(4, '+')

@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/javierpiquerasmartinez/adventjs-2023/issues"
   },
-  "homepage": "https://github.com/javierpiquerasmartinez/adventjs-2023#readme"
+  "homepage": "https://github.com/javierpiquerasmartinez/adventjs-2023#readme",
+  "devDependencies": {
+    "eslint": "8.56.0"
+  }
 }

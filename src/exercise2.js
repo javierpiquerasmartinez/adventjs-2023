@@ -7,19 +7,19 @@ Tu tarea es escribir una función que, dada una lista de regalos y los materiale
 Un regalo se puede fabricar si contamos con todos los materiales necesarios para fabricarlo. */
 
 function manufacture(gifts, materials) {
-    const res = []
-    for(let gift of gifts) {
-        let giftMaterials = gift.split('')
-        let hasMaterials = giftMaterials.every(material => materials.includes(material))
-        if (hasMaterials) res.push(gift)
-    }
-    return res
+	const res = []
+	for(let gift of gifts) {
+		let giftMaterials = gift.split('')
+		let hasMaterials = giftMaterials.every(material => materials.includes(material))
+		if (hasMaterials) res.push(gift)
+	}
+	return res
 }
 
 function manufacture2(gifts, materials){
-    return gifts.filter(gift => {
-        return gift.split('').every(material => materials.includes(material))
-    })
+	return gifts.filter(gift => {
+		return gift.split('').every(material => materials.includes(material))
+	})
 }
 
 const gifts = ['tren', 'oso', 'pelota']

@@ -10,16 +10,16 @@ Si no hay números repetidos, devuelve -1.
 */
 
 function findFirstRepeated(gifts) {
-    const processed = []
+	const processed = []
 
-    for(let gift of gifts){
-        if(processed.includes(gift)) return gift
-        processed.push(gift)
-    }
+	for(let gift of gifts){
+		if(processed.includes(gift)) return gift
+		processed.push(gift)
+	}
 
-    return -1
+	return -1
 }
 
 function findFirstRepeated2(gifts) {
-    return gifts.find((id, i) => gifts.indexOf(id) !== i) ?? -1
+	return gifts.find((id, i) => gifts.indexOf(id) !== i) ?? -1
 }

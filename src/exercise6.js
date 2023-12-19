@@ -20,11 +20,11 @@ la máxima distancia que puede recorrer el reno en cualquier dirección:
 */
 
 function maxDistance(movements) {
-    const result = Math.abs(
-      (movements.match(/\>/g)?.length || 0) - // movements to the right
+	const result = Math.abs(
+		(movements.match(/\>/g)?.length || 0) - // movements to the right
       (movements.match(/\</g)?.length || 0)) + // movements to the left
       (movements.match(/\*/g)?.length || 0) // free movements
-    return result
+	return result
 }
 const movements = '>>*<'
 const result = maxDistance(movements)
