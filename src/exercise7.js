@@ -7,12 +7,12 @@ genere un dibujo de un regalo en 3D utilizando caracteres ASCII.
 Las líneas de los regalos se dibujan con # y las caras con el símbolo que nos pasan como parámetro:
 */
 
-function drawGift(size, symbol) {
-	// Code here
-	return '#\n'
+/* function drawGift(size, symbol) {
+  // Code here
+  return '#\n'
 }
 
-drawGift(4, '+')
+drawGift(4, '+') */
 
 /*
    ####
@@ -24,7 +24,7 @@ drawGift(4, '+')
 ####
 */
 
-drawGift(5, '*')
+// drawGift(5, '*')/*  */
 /*
     #####
    #***##
@@ -37,7 +37,7 @@ drawGift(5, '*')
 #####
 */
 
-drawGift(1, '^')
+// drawGift(1, '^')
 /*
 #
 */
