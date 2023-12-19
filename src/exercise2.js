@@ -25,3 +25,4 @@ function manufacture2(gifts, materials){
 const gifts = ['tren', 'oso', 'pelota']
 const materials = 'tronesa'
 manufacture(gifts, materials)
+manufacture2(gifts, materials)

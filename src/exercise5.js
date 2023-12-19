@@ -38,7 +38,7 @@ function cyberReindeer(road, time) {
 	for(let i = 1; i < time; i++) {
 		if(i === 5) road = road.replaceAll('|', '*')
 
-		const canMove = road.match(/S[\*\.]/g)
+		const canMove = road.match(/S[*.]/g)
 		if(canMove) {
 			road = road.replace(canMove[0], currentStep + 'S')
 			currentStep = canMove[0][1]
@@ -47,3 +47,8 @@ function cyberReindeer(road, time) {
 	}
 	return snapshots
 }
+
+
+const road = 'S..|...|..'
+const time = 10 // unidades de tiempo
+cyberReindeer(road, time)

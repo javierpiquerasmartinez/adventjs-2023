@@ -16,3 +16,12 @@ function decode(message) {
 	const matchReversed = fragment[0].split('').slice(1, -1).reverse().join('')
 	return decode(message.replace(fragment[0], matchReversed))
 }
+
+const a = decode('hola (odnum)')
+console.log(a) // hola mundo
+
+const b = decode('(olleh) (dlrow)!')
+console.log(b) // hello world!
+
+const c = decode('sa(u(cla)atn)s')
+console.log(c) // santaclaus
