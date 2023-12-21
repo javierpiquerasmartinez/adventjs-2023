@@ -65,7 +65,7 @@ function autonomousDrive(store, movements) {
 
 const store = ['..!....', '...*.*.']
 
-const movements = ['R', 'R', 'D', 'L', 'L', 'U', 'U', 'U']
+const movements = ['R', 'R', 'D', 'L']
 const result = autonomousDrive(store, movements)
 console.log(result)
 
