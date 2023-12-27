@@ -1,7 +1,7 @@
 
 const calculateTime = require('./challenge-13')
 
-describe('Challenge 13: Calculate Time', () => {
+describe('Challenge 13: Calculate Time', () => {
   it('Test 01', () => {
     expect(calculateTime(['00:10:00', '01:00:00', '03:30:00'])).toBe('-02:20:00')
   })

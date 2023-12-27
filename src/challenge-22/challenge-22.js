@@ -9,26 +9,26 @@ function compile(code) {
     operations = returnPoint ? operations + operation : ''
     if(!avoidConditionalBlock) {
       switch (operation) {
-        case '+':
-          counter++
-          break;
-        case '*':
-          counter = counter*2
-          break
-        case '-':
-          counter--
-          break
-        case '%':
-          returnPoint = true
-          operations = ''
-          break
-        case '<':
-          counter = counter + compile(operations)
-          returnPoint = false
-          break
-        case '¿':
-          if(counter <= 0) avoidConditionalBlock = true
-          break
+      case '+':
+        counter++
+        break
+      case '*':
+        counter = counter*2
+        break
+      case '-':
+        counter--
+        break
+      case '%':
+        returnPoint = true
+        operations = ''
+        break
+      case '<':
+        counter = counter + compile(operations)
+        returnPoint = false
+        break
+      case '¿':
+        if(counter <= 0) avoidConditionalBlock = true
+        break
       }
     }
     if(operation === '?') avoidConditionalBlock = false

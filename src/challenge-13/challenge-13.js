@@ -4,7 +4,7 @@ function calculateTime(deliveries) {
   let targetSeconds = 7 * 60 * 60
 
   for(let delivery of deliveries) {
-    let deliveryTime = delivery.split(':');
+    let deliveryTime = delivery.split(':')
     totalSeconds = 
       totalSeconds + 
       (deliveryTime[0] * 60 * 60) + 

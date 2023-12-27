@@ -7,8 +7,8 @@ describe('Challenge 15: Autonomous Drive', () => {
     const movements = ['R', 'R', 'D', 'L']
     expect(autonomousDrive(store, movements)).toStrictEqual(
       [
-        ".......",
-        "...*!*."
+        '.......',
+        '...*!*.'
       ]
     )
   })

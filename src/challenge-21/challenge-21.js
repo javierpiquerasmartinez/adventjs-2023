@@ -12,8 +12,8 @@ function findBalancedSegment(message) {
           || largestCombination[0] === undefined
         )
       ){
-          largestCombination[0] = i
-          largestCombination[1] = j - 1
+        largestCombination[0] = i
+        largestCombination[1] = j - 1
       }
     }
   }

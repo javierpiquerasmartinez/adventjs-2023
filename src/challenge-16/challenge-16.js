@@ -8,4 +8,4 @@ function transformTree(tree) {
     right: transformTree(tree, (index * 2) + 2)
   }
 }
- module.exports = transformTree
+module.exports = transformTree

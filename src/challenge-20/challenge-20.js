@@ -23,7 +23,7 @@ function distributeGifts(weights) {
         divideBy += (weights[i][index + 1]) ? 1 : 0
       } 
       return Math.round(res / divideBy)
-    });
+    })
   }
   return result
 }

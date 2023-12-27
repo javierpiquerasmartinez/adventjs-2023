@@ -101,7 +101,6 @@ function drawClock(time) {
     [' ', ' ', ' ']
   ]}
   const rows = 7
-  const numberCols = 3
   const timeSplitted = time.split('')
 
   let result = []

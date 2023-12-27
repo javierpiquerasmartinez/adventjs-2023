@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "AdventJS solved exercises ",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "test": "jest",
     "test:challenge01": "clear && jest --testPathPattern='/src/challenge-01/.*\\.test\\.js$'",

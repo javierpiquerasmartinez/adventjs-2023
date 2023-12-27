@@ -11,6 +11,6 @@ describe('Challenge 25: Travel Distance', () => {
     expect(travelDistance(map)).toBe(12)
   })
   it('Test 02', () => {
-    expect(travelDistance(`..S.1...`)).toBe(2)
+    expect(travelDistance('..S.1...')).toBe(2)
   })
 })
