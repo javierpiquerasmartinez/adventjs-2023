@@ -1,4 +1,5 @@
-/* 
+# Challenge 08
+
 Los elfos están muy ocupados en el taller de Santa Claus organizando regalos 🎁 para la víspera de Navidad 🎄.
 
 El formato de entrada es especial, ya que indica el número de regalos y el tipo de regalo con letras de la a a la z. 
@@ -16,24 +17,3 @@ Los regalos luego se colocan en el siguiente orden: palés, cajas y bolsas.
 Y los regalos aparecen en el mismo orden que la cadena de entrada.
 
 Tu tarea es escribir una función organizeGifts que tome una cadena de regalos como argumento y devuelva una cadena representando el almacén.
-*/
-
-function organizeGifts(gifts) {
-  if(!gifts) return ''
-  const amounts = gifts.match(/\d+/g)
-  const presents = gifts.match(/[a-z]/g)
-  let result = ''
-  for(let i = 0; i < amounts.length; i++) {
-    let pale = Math.floor(amounts[i] / 50)
-    result = result.concat(`${`[${presents[i]}]`.repeat(pale)}`)
-    let box = Math.floor((amounts[i]%50) / 10)
-    result = result.concat(`${`{${presents[i]}}`.repeat(box)}`)
-    let bag = amounts[i]%10
-    if(bag) result = result.concat(`(${presents[i].repeat(bag)})`)
-  }
-  return result
-}
-
-const result1 = organizeGifts('76a11b')
-console.log(result1)
-// '[a]{a}{a}(aaaaaa){b}(b)'
